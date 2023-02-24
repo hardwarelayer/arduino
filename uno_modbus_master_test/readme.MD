@@ -16,12 +16,6 @@ so I modified everything
 
 to use the ModBusMaster lib from standard Libraries Manager (https://github.com/4-20ma/ModbusMaster)
 
-### Note: 
-
-USB-RS485 should be removed during flashing Uno
-
-Sometime, TX and RX will block flashing, when failed, remove them.
-
 ### Tool on PC:
 
 Free:
@@ -31,6 +25,8 @@ Free:
 		diagslave -b 9600 -p none -m rtu COM5
 
 But this cannot view the register values on realtime.
+![Diagram](diagslave.PNG)
+
 
 Trial:
 
@@ -38,3 +34,18 @@ Modbus slave software for PC:
 
 	https://www.modbustools.com/modbus_slave.html <-- trial
 
+Must configure correctly as in code:
+
+![ConnectSetting](slave_connect_setting.PNG)
+
+![Definition](slave_setting.PNG)
+
+![Values](register_values.PNG)
+
+### Note: 
+
+USB-RS485 should be removed during flashing Uno
+
+Sometime, TX and RX will block flashing, when failed, remove them.
+
+The common GND between USB and diagram is not needed (nice to have)
