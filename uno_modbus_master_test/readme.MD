@@ -2,6 +2,14 @@
 
 Using Arduino UNO as master and PC as slave.
 
+Note: this project is only my initial step, only write registers.
+
+The next project:
+
+https://github.com/hardwarelayer/arduino_uno_generic_projects/tree/master/uno_modbus_master_rw_pc
+
+Also implement the Read operations.
+
 ### Diagram:
 
 ![Diagram](tien_diagram1.PNG)
